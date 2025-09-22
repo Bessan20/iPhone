@@ -3,11 +3,11 @@ function Hero() {
 
     return (
         
-        <section className="relative w-full h-screen flex items-start justify-center overflow-hidden bg-black pt-2">
+        <section className="relative w-screen h-screen flex items-start justify-center overflow-hidden bg-black pt-2">
             <img
                 src={iPhone}
                 alt="iPhone"
-                className="h-[600px] w-full object-contain"
+                className="h-[600px] w-full object-contain animate-hero-entry"
             />
             <div className="absolute inset-0 flex flex-col items-center justify-center">
                 <h1 className="text-white  text-3xl px-6 py-3 ">

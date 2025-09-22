@@ -6,7 +6,7 @@ function Navbar1() {
 
     return (
 
-        <nav className="w-full bg-black  ">
+        <nav className="w-screen bg-black  ">
             
          <ul className="flex flex-1 justify-evenly justify-center space-x-12 p-3 text-[13px] font-light text-neutral-300">
                

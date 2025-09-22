@@ -6,7 +6,18 @@ export default {
 
   ],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        'hero-entry': {
+          '0%': { transform: 'scale(1.1) translateY(20px)', opacity: '0' },
+          '100%': { transform: 'scale(1) translateY(0)', opacity: '1' },
+        },
+      },
+      animation: {
+        'hero-entry': 'hero-entry 2s ease-out forwards',
+      },
+    
+    },
   },
   plugins: [],
 }

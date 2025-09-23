@@ -2,4 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+.glowing-text {
+  color: #fff;
+  text-shadow:
+   0 0 1px #f2cfa5,
+    0 0 4px #f2cfa5,
+    0 0 8px #e5b97c;
+    }
+
 

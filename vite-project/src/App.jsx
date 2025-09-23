@@ -1,8 +1,9 @@
 import Navbar1  from "./components/Navbar1.jsx" ;
 import Hero  from "./components/Hero.jsx";
 import Highlights   from "./components/Highlights.jsx";
-import Colors from "./components/colors.jsx";
+import Colors from "./components/Colors1.jsx";
 import Titanium from "./components/Titanium.jsx";
+import Control from "./components/Control.jsx";
 import VisualI  from "./components/VisualI.jsx";  
 function App() {
   
@@ -14,6 +15,7 @@ function App() {
       <Highlights/>
       <Colors/>
       <Titanium/>
+      <Control/>
       <VisualI/>
 
     </>

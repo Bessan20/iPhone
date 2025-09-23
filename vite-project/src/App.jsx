@@ -5,6 +5,7 @@ import Colors from "./components/Colors1.jsx";
 import Titanium from "./components/Titanium.jsx";
 import Control from "./components/Control.jsx";
 import VisualI  from "./components/VisualI.jsx";  
+import Sizes from "./components/Sizes.jsx";
 function App() {
   
 
@@ -17,6 +18,7 @@ function App() {
       <Titanium/>
       <Control/>
       <VisualI/>
+      <Sizes/>
 
     </>
   )

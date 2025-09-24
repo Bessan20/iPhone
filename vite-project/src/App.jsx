@@ -6,6 +6,9 @@ import Titanium from "./components/Titanium.jsx";
 import Control from "./components/Control.jsx";
 import VisualI  from "./components/VisualI.jsx";  
 import Sizes from "./components/Sizes.jsx";
+import Section1 from "./components/Section1.jsx";
+import Section2 from "./components/Section2.jsx";
+import Section3 from "./components/Section3.jsx";
 function App() {
   
 
@@ -19,6 +22,9 @@ function App() {
       <Control/>
       <VisualI/>
       <Sizes/>
+      <Section1/>
+      <Section2/>
+      <Section3/>
 
     </>
   )

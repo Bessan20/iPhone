@@ -3,7 +3,7 @@ function Titanium() {
 
     return(
 
-        <section className="w-screen min-h-screen bg-black justify-center items-center flex flex-col ">
+        <section className="w-screen min-h-screen bg-black justify-center items-center flex flex-col group ">
             
             <div className="mt-36" >
                 <span className = "text-white font-bold text-6xl">Strength.</span>
@@ -13,7 +13,7 @@ function Titanium() {
             <div className=" mt-2 relative flex justify-center">
                 
 
-                <span className = "text-white font-bold text-6xl mx-auto w-fit drop-shadow-[0_0_50px_#f4a261] glowing-text">Titanium.</span>
+                <span className = "text-white font-bold text-6xl mx-auto w-fit group-hover:drop-shadow-[0_0_50px_#f4a261] glowing-text ">Titanium.</span>
 
             </div>
             

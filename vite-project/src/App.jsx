@@ -10,6 +10,7 @@ import Section1 from "./components/Section1.jsx";
 import Section2 from "./components/Section2.jsx";
 import Section3 from "./components/Section3.jsx";
 import Promo from "./components/Promo.jsx";
+import Photographic from "./components/Photographic.jsx";
 function App() {
   
 
@@ -28,6 +29,7 @@ function App() {
       <Section2/>
       <Section3/>
       <Promo/>
+      <Photographic/>
 
     </>
   )

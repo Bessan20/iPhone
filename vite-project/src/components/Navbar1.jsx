@@ -25,7 +25,7 @@ function Navbar1() {
                         <li>Mac Studio</li>
                         <li>Displays</li>
                     </ul>
-                    <div>
+                    <div className={`flex flex-col justify-start items-start`}>
                     <div className={`text-sm`}>Compare Mac</div>
                     <div className={`text-sm`}>Mac does that</div>
                     </div>
@@ -59,7 +59,7 @@ function Navbar1() {
                         <li>Apple Pencil</li>
                         <li>Keyboards</li>
                     </ul>
-                    <div>
+                    <div className={`flex flex-col justify-start items-start`}>
                     <div className={`text-sm`}>Compare iPad</div>
                     <div className={`text-sm`}>iPad does that</div>
                     </div>
@@ -91,7 +91,7 @@ function Navbar1() {
                         <li>iPhone 15</li>
                         
                     </ul>
-                    <div>
+                    <div className={`flex flex-col justify-start items-start`}>
                     <div className={`text-sm`}>Compare iPhone</div>
                     <div className={`text-sm`}>Switch from Android</div>
                     </div>
@@ -112,12 +112,176 @@ function Navbar1() {
                  
                         
             </div>)} onMouseLeave={() => setHovered(null)} className="cursor-pointer">iPhone</li>
-        <li onMouseEnter={() => setHovered("Watch")} onMouseLeave={() => setHovered(null)} className="cursor-pointer">Watch</li>
-        <li onMouseEnter={() => setHovered("AirPods")} onMouseLeave={() => setHovered(null)} className="cursor-pointer">AirPods</li>
-        <li onMouseEnter={() => setHovered("Tv & Home")} onMouseLeave={() => setHovered(null)} className="cursor-pointer">Tv & Home</li>
-        <li onMouseEnter={() => setHovered("Entertainment")} onMouseLeave={() => setHovered(null)} className="cursor-pointer">Entertainment</li>
-        <li onMouseEnter={() => setHovered("Support")} onMouseLeave={() => setHovered(null)} className="cursor-pointer">Support</li>
-        <li onMouseEnter={() => setHovered("Where to Buy")} onMouseLeave={() => setHovered(null)} className="cursor-pointer">Where to Buy</li>
+        <li onMouseEnter={() => setHovered(<div className = {`flex flex-row gap-x-12 items-start justify-start`}>
+                 <div className={`flex flex-col gap-y-6 items-start justify-start`}>
+                    <h1 className = {`text-neutral-500 text-sm`}>Explore Watch</h1>
+                    <ul className={`text-neutral-100 font-bold flex flex-col text-2xl items-start justify-start gap-y-2`}>
+                        <li>Explore All Apple Watch</li>
+                        <li>Apple Watch Series 10</li>
+                        <li>Apple Watch SE</li>
+                        <li>Apple Watch Nike</li>
+                        
+                    </ul>
+                    <div className={`flex flex-col justify-start items-start`}>
+                    <div className={`text-sm`}>Compare Watch</div>
+                    <div className={`text-sm`}>Why Apple Watch</div>
+                    </div>
+                    </div>
+                    
+                    <div className={`flex flex-col gap-y-6 items-start justify-start`}>
+                    <h1 className = {`text-neutral-500 text-sm`}>More from Watch</h1>
+                    <ul className={`text-neutral-100 font-bold flex flex-col text-sm items-start justify-start gap-y-1`}>
+                        <li>Apple Watch Support</li>
+                        <li>Apps by Apple</li>
+                        
+                    </ul>
+                    </div>
+                    
+
+                 
+                        
+            </div>)} onMouseLeave={() => setHovered(null)} className="cursor-pointer">Watch</li>
+        <li onMouseEnter={() => setHovered(<div className = {`flex flex-row gap-x-12 items-start justify-start`}>
+                 <div className={`flex flex-col gap-y-6 items-start justify-start`}>
+                    <h1 className = {`text-neutral-500 text-sm`}>Explore AirPods</h1>
+                    <ul className={`text-neutral-100 font-bold flex flex-col text-2xl items-start justify-start gap-y-2`}>
+                        <li>Explore All AirPods</li>
+                        <li>AirPods Pro 2nd generation</li>
+                        <li>AirPods 2nd generation</li>
+                        <li>AirPods 3nd generation</li>
+                        <li>AirPods Max</li>
+                        
+                    </ul>
+                    <div className={`flex flex-col justify-start items-start`}>
+                    <div className={`text-sm`}>Compare AirPods</div>
+                    
+                    </div>
+                    </div>
+                    
+                    <div className={`flex flex-col gap-y-6 items-start justify-start`}>
+                    <h1 className = {`text-neutral-500 text-sm`}>More from AirPods</h1>
+                    <ul className={`text-neutral-100 font-bold flex flex-col text-sm items-start justify-start gap-y-1`}>
+                        <li>AirPods Support</li>
+                        <li>Apple Music</li>
+                        
+                    </ul>
+                    </div>
+                    
+
+                 
+                        
+            </div>)} onMouseLeave={() => setHovered(null)} className="cursor-pointer">AirPods</li>
+        <li onMouseEnter={() => setHovered(<div className = {`flex flex-row gap-x-12 items-start justify-start`}>
+                 <div className={`flex flex-col gap-y-6 items-start justify-start`}>
+                    <h1 className = {`text-neutral-500 text-sm`}>Explore TV & Home</h1>
+                    <ul className={`text-neutral-100 font-bold flex flex-col text-2xl items-start justify-start gap-y-2`}>
+                        <li>Explore TV & Home</li>
+                        <li>Apple TV 4K</li>   
+                    </ul>
+                    
+                    </div>
+                    
+                    <div className={`flex flex-col gap-y-6 items-start justify-start`}>
+                    <h1 className = {`text-neutral-500 text-sm`}>More from Watch</h1>
+                    <ul className={`text-neutral-100 font-bold flex flex-col text-sm items-start justify-start gap-y-1`}>
+                        <li>Apple TV Support</li>
+                        <li>Apple TV app</li>
+                        <li>Apple TV+</li>
+                        <li>Apple Music</li>
+                        <li>AirPlay</li>
+                        
+                    </ul>
+                    </div>
+                    
+
+                 
+                        
+            </div>)} onMouseLeave={() => setHovered(null)} className="cursor-pointer">TV & Home</li>
+        <li onMouseEnter={() => setHovered(<div className = {`flex flex-row gap-x-12 items-start justify-start`}>
+                 <div className={`flex flex-col gap-y-6 items-start justify-start`}>
+                    <h1 className = {`text-neutral-500 text-sm`}>Explore Entertainment</h1>
+                    <ul className={`text-neutral-100 font-bold flex flex-col text-2xl items-start justify-start gap-y-2`}>
+                        <li>Explore Entertainment</li>
+                        <li>Apple One</li>
+                        <li>Apple TV+</li>
+                        <li>Apple Music</li>
+                        <li>Apple Arcade</li>
+                        <li>Apple Podcasts</li>
+                        <li>Apple Books</li>
+                        <li>App Store</li>
+                        
+                    </ul>
+                    
+                    </div>
+                    
+                    <div className={`flex flex-col gap-y-6 items-start justify-start`}>
+                    <h1 className = {`text-neutral-500 text-sm`}>Support</h1>
+                    <ul className={`text-neutral-100 font-bold flex flex-col text-sm items-start justify-start gap-y-1`}>
+                        <li>Apple TV+ Support</li>
+                        <li>Apple Music Support</li>
+                        
+                    </ul>
+                    </div>
+                    
+
+                 
+                        
+            </div>)} onMouseLeave={() => setHovered(null)} className="cursor-pointer">Entertainment</li>
+        <li onMouseEnter={() => setHovered(
+            <div className = {`flex flex-row gap-x-12 items-start justify-start`}>
+                 <div className={`flex flex-col gap-y-6 items-start justify-start`}>
+                    <h1 className = {`text-neutral-500 text-sm`}>Explore Support</h1>
+                    <ul className={`text-neutral-100 font-bold flex flex-col text-2xl items-start justify-start gap-y-2`}>
+                        <li>iPhone</li>
+                        <li>Mac</li>
+                        <li>iPad</li>
+                        <li>Watch</li>
+                        <li>AirPods</li>
+                        <li>Music</li>
+                        <li>TV</li>
+                    </ul>
+                    <div className={`flex flex-col justify-start items-start`}>
+                    <div className={`text-sm`}>Explore Support</div>
+                    
+                    </div>
+                    </div>
+
+                    <div className={`flex flex-col gap-y-6 items-start justify-start`}>
+                    <h1 className = {`text-neutral-500 text-sm`}>Get Help</h1>
+                    <ul className={`text-neutral-100 font-bold flex flex-col text-sm items-start justify-start gap-y-1`}>
+                        <li>Community</li>
+                        
+                    </ul>
+                    </div>
+                    
+                    <div className={`flex flex-col gap-y-6 items-start justify-start`}>
+                    <h1 className = {`text-neutral-500 text-sm`}>Helpful Topics</h1>
+                    <ul className={`text-neutral-100 font-bold flex flex-col text-sm items-start justify-start gap-y-1`}>
+                        <li>Apple Account and Password</li>
+                        <li>Billing and Subscriptions</li>
+                        <li>Accessibility</li>
+                        
+                    </ul>
+                    </div>
+                    
+
+                 
+                        
+            </div>)} onMouseLeave={() => setHovered(null)} className="cursor-pointer">Support</li>
+        <li onMouseEnter={() => setHovered(<div className = {`flex flex-row gap-x-12 items-start justify-start`}>
+                 <div className={`flex flex-col gap-y-6 items-start justify-start`}>
+                    <h1 className = {`text-neutral-500 text-sm`}>Explore</h1>
+                    <ul className={`text-neutral-100 font-bold flex flex-col text-2xl items-start justify-start gap-y-2`}>
+                        <li>Authorized Resellers</li>
+                        <li>Service & Support</li>
+                        
+                    </ul>
+                    <div className={`flex flex-col justify-start items-start`}>
+                    <div className={`text-sm`}>Explore All Ways to Buy</div>
+                    </div>
+                    </div>      
+                        
+            </div>)} onMouseLeave={() => setHovered(null)} className="cursor-pointer">Where to Buy</li>
         <li><img src={searchLogo} alt="search logo" className='w-5 h-5' /></li>
       </ul>
       {hovered && (

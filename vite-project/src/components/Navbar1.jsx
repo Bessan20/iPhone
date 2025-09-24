@@ -6,9 +6,9 @@ function Navbar1() {
 
     return (
 
-        <nav className="w-screen bg-black  ">
+        <nav className="sticky top-0 z-50  w-screen bg-black  ">
             
-         <ul className="flex flex-1 justify-evenly justify-center space-x-12 p-4 text-[13px] font-light text-neutral-300">
+         <ul className="flex flex-1 justify-evenly justify-center space-x-12 p-6 text-[13px] font-light text-neutral-300">
                
                
                <li><img src ={appleLogo} alt ="apple logo" className='w-4 h-4'></img></li>              

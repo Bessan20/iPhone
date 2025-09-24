@@ -15,7 +15,8 @@ function App() {
 
   return (
     <>
-      <Navbar1 />
+    
+      <Navbar1  />
       <Hero/>
       <Highlights/>
       <Colors/>

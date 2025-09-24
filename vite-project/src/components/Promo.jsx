@@ -1,11 +1,38 @@
+import { useRef, useEffect } from "react";
 import Video from "../assets/iVideo.mp4";
 function Promo() {
+   
+  const videoRef = useRef(null);
 
+  useEffect(() => {
+    const videoElement = videoRef.current;
+    const observer = new window.IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          if (videoElement) {
+            videoElement.currentTime = 0;
+            videoElement.play();
+        } }else {
+          videoElement && videoElement.pause();
+        }
+      },
+      { threshold: 0.5 }
+    );
+    if (videoElement) {
+      observer.observe(videoElement);
+    }
+    return () => {
+      if (videoElement) {
+        observer.unobserve(videoElement);
+      }
+    };
+  }, []);
     return(
         <section className="w-screen min-h-screen bg-black flex items-center justify-center">
       <div className="w-full m-0 ">
         <video
-          className="w-full h-full rounded-xl shadow-lg object-cover"
+          ref={videoRef}
+          className="min-w-screen min-h-screen rounded-xl shadow-lg object-cover"
           
           autoPlay
           muted

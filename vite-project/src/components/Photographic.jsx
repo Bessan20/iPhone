@@ -1,7 +1,7 @@
 import { useRef, useEffect, useState } from "react";
 import Hand from "../assets/Hand.mp4";
 
-function Control() {
+function Photographic() {
 const sectionRef = useRef(null);
     const [glow, setGlow] = useState(false);
 
@@ -26,6 +26,31 @@ const sectionRef = useRef(null);
             }
         };
     }, []);
+    
+    const videoRef = useRef(null);
+    useEffect(() => {
+    const videoElement = videoRef.current;
+    const observer = new window.IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          if (videoElement) {
+            videoElement.currentTime = 0;
+            videoElement.play();
+        } }else {
+          videoElement && videoElement.pause();
+        }
+      },
+      { threshold: 0.5 }
+    );
+    if (videoElement) {
+      observer.observe(videoElement);
+    }
+    return () => {
+      if (videoElement) {
+        observer.unobserve(videoElement);
+      }
+    };
+  }, []);
     return(
 
         <section 
@@ -54,10 +79,10 @@ const sectionRef = useRef(null);
             
             <div className="my-12 w-auto h-[500px] flex justify-center items-center">
                  <video
+                 ref={videoRef}
                 className="w-full h-full object-cover rounded-3xl"
                 autoPlay
-               muted
-              loop>
+               muted>
   
               <source src={Hand} type="video/mp4" />
               Your browser does not support the video tag.
@@ -69,4 +94,4 @@ const sectionRef = useRef(null);
     )
 }
 
-export default Control;
+export default Photographic;
